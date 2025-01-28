@@ -1365,8 +1365,8 @@ pre code {
     }
 
     .col-lg-5 {
-        flex: 0 0 41.66667%;
-        max-width: 41.66667%
+        /* flex: 0 0 41.66667%; */
+        /* max-width: 41.66667%; */
     }
 
     .col-lg-6 {
@@ -11160,10 +11160,7 @@ a:focus {
     /* background-position: center; */
     /* background-size: cover; */
     background: url(https://tse3.mm.bing.net/th?id=OIP.JttmcrrQ9_XqrY60bFEfgQHaHa&pid=Api&P=0&w=300&h=300);
-    https: //co.images.search.yahoo.com/images/view;
-    _ylt=AwrFEnkKHeNmSsgFExatcgx.;
-    _ylu=c2VjA3NyBHNsawNpbWcEb2lkAzA0NzVhMzExYmJlOWI0MmVhNGI2ZmUzY2Q1M2U0OTA2BGdwb3MDMTUEaXQDYmluZw--?back=https%3A%2F%2Fco.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dusarios%2Blogo%2Bde%2Bcolor%2Bazul%26ei%3DUTF-8%26type%3DE210CO91215G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D15&w=1080&h=1080&imgurl=toowoombaautoservices.com.au%2Fwp-content%2Fuploads%2F2020%2F01%2Fperson-1824144_1280-1080x1080.png&rurl=https%3A%2F%2Ftoowoombaautoservices.com.au%2Fperson-1824144_1280%2F&size=346.7KB&p=usarios+logo+de+color+azul&oid=0475a31…&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=User+Icon_Blue+%7C+Toowoomba+Auto+Services&b=0&ni=56&no=15&ts=&tab=organic&sigr=X2avtsDxS4ot&sigb=.0yQQd_rArsz&sigi=7XL0Gk8EcJQR&sigt=rr3uCjFbBT0v&.crumb=GDHf8ykF1DC&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210CO91215G0); */
-    background-position: center;
+      background-position: center;
     background-position: center;
 }
 

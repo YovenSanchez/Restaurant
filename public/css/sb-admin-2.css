@@ -46,7 +46,9 @@
 *::after {
   box-sizing: border-box;
 }
+tr{
 
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -386,7 +388,7 @@ template {
   margin: 7px;
   background-image: linear-gradient(90deg, #54ff0d99 10%, #89080859 100%);
 };
-  /* background: #412918; */ */
+  /* background: #412918; */ 
   color: red;
   color: #0f5203;
   font-weight: 900;
@@ -11433,4 +11435,10 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+}
+tr{
+}
+
+tr:hover{
+  background: wheat;
 }

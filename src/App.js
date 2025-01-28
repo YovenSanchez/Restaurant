@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import MenuPpal from "./componentes/Menu"
 import Login from "./componentes/Login"
 import Pedido from "./componentes/Pedido"
 import Pedidos from "./componentes/Pedidos"
 import Cliente from "./componentes/Cliente"
-import Nuevo_pedido from "./componentes/nuevo_pedido"
+import NuevoPedido from "./componentes/nuevoPedido"
 import Productos from "./componentes/Productos"
 // import Cliente from "./componentes/Cliente"
 import{BrowserRouter,Route,Routes} from "react-router-dom" 
@@ -20,8 +20,8 @@ function App() {
   <Route path="/Pedido"element={<Pedido/>} />
   <Route path="/Pedidos"element={<Pedidos/>} />
   <Route path="/Cliente"element={<Cliente/>} />
-  <Route path="/Nuevo_pedido"element={<Nuevo_pedido/>} />
-  <Route path="/Pedidos"element={<Productos/>} />
+  <Route path="/NuevoPedido"element={<NuevoPedido/>} />
+  <Route path="/Productos"element={<Productos/>} />
   {/* <Route path="/Cliente"element={<Cliente/>} /> */}
 </Routes>
 </BrowserRouter>

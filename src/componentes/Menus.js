@@ -1,3 +1,4 @@
+import swal from "sweetalert";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -20,7 +21,8 @@ const Menus = () => {
             const res = await axios.get(URI + "list");
             setMenus(res.data);
         } catch (error) {
-            console.log('Error al obtener los menús:', error);
+            console.error('Error al cancelar el menú:', error); 
+               swal("Error al listar los menús el botón ","Presiona el botón", "error"); 
         }
     };
 
@@ -30,6 +32,7 @@ const Menus = () => {
             listmenus();
         } catch (error) {
             console.log('Error al eliminar el menú:', error);
+            swal("Error al cancelar el menú ", "Presiona el botón", "error"); 
         }
     };
 
