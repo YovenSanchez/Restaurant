@@ -38,5 +38,10 @@ public class PedidoServiceImpl implements PedidoService{
     public Pedido estado(int id_cliente,String estado) {
         return pedidoDao.estado(id_cliente, estado);
     } 
+        @Override
+    @Transactional(readOnly=true)
+    public List<Pedido> consultarPedidos(int id_cliente) {
+        return pedidoDao.consultarPedidos(id_cliente);
+    } 
 }
 

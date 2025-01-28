@@ -10,4 +10,5 @@ public interface PedidoService {
     public Pedido findById(int id);
     public List<Pedido> findByAll();
     public Pedido estado(int id_cliente,String Estado);
+      public List<Pedido> consultarPedidos(int id_cliente);
 }

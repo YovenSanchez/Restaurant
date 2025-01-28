@@ -52,12 +52,10 @@ menu_productoService.save(obj);
             return new ResponseEntity<>(obj, HttpStatus.INTERNAL_SERVER_ERROR); 
         return new ResponseEntity<>(obj, HttpStatus.OK); 
     }
-    @GetMapping("/consultarTodo")
-public String listarProductosEnVenta(Model model) {
-    List<Menu_Producto> consultarTodo = menu_productoService.findByAll();
-    model.addAttribute("consultarTodo", consultarTodo);
-    return "consultarTodo"+model;
-}
+   @GetMapping("/list")
+    public List<Menu_Producto> consultarTodo(){
+        return menu_productoService.findByAll(); 
+    }
     
     @GetMapping("/list/{id}") 
     public Menu_Producto consultaPorId(@PathVariable int id){ 

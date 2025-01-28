@@ -45,7 +45,7 @@ public class PedidoController {
         Pedido obj = pedidoService.findById(pedido.getId_pedido()); 
         if(obj!=null) {
             obj.setValor_pedido(pedido.getValor_pedido());
-         // obj.setFecha(pedido.getFecha());
+            obj.setEstado(pedido.getEstado());
          // obj.setDireccion(pedido.getDireccion());
            
 pedidoService.save(obj); 
@@ -68,5 +68,7 @@ pedidoService.save(obj);
     public Pedido estado(@RequestParam("id_cliente") int id_cliente,@RequestParam("estado") String estado){ 
         return pedidoService.estado(id_cliente, estado); 
     }
-
-}
+@GetMapping("/visualizarPedidos/{id_cliente}")
+public List<Pedido> consultarPedidos(@PathVariable int id_cliente) {   
+        return pedidoService.consultarPedidos(id_cliente);
+}}

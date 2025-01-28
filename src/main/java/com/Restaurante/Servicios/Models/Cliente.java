@@ -20,7 +20,7 @@ public class Cliente implements Serializable {
     private String numero_documento;
     
     @Column(name="Telefono")
-    private int telefono;
+    private String telefono;
     @Column(name="Edad")
     private int edad;
     @Column(name="Correo_electronico")
@@ -32,7 +32,7 @@ public class Cliente implements Serializable {
     public Cliente() {
     }
 
-    public Cliente(int id_cliente, String nombre_cliente, String numero_documento, int telefono, int edad, String correo_electronico, String direccion) {
+    public Cliente(Integer id_cliente, String nombre_cliente, String numero_documento, String telefono, int edad, String correo_electronico, String direccion) {
         this.id_cliente = id_cliente;
         this.nombre_cliente = nombre_cliente;
         this.numero_documento = numero_documento;
@@ -42,7 +42,7 @@ public class Cliente implements Serializable {
         this.direccion = direccion;
     }
 
-    public int getId_cliente() {
+    public Integer getId_cliente() {
         return id_cliente;
     }
 
@@ -66,11 +66,11 @@ public class Cliente implements Serializable {
         this.numero_documento = numero_documento;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

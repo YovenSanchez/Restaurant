@@ -66,7 +66,7 @@ public ResponseEntity<List<Pedido_Menu>> consultarPedido(@PathVariable Integer i
     try {
         List<Pedido_Menu> pedidos = pedido_menuService.consultarPedido(id_pedido);
         if (pedidos.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+           
         }
         return new ResponseEntity<>(pedidos, HttpStatus.OK);
     } catch (Exception e) {

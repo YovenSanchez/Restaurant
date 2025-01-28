@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 public interface Pedido_MenuDao extends CrudRepository <Pedido_Menu, Integer>{
 
   
+
 @Transactional(readOnly = true) 
 @Query(value = "SELECT * FROM pedido_menu WHERE id_pedido = :id_pedido ", nativeQuery = true) 
 List<Pedido_Menu> consultarPedido(@Param("id_pedido") Integer id_pedido);
